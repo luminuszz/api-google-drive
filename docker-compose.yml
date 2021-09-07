@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  database:
+    image: mongo
+    restart: always
+    container_name: db_container
+    ports:
+      - ${DB_PORT}:${DB_PORT}
